@@ -43,10 +43,12 @@
                     <li>All Fruits</li>
                 </ul>
             </div>
+            <!-- logo -->
             <div class="flex gap-2 lg:gap-4 items-center ml-10">
                 <img src="images/logo.png" alt="">
                 <h2 class="md:text-xl lg:text-4xl">Fruit Burst</h2>
             </div>
+            <!-- search box -->
             <div class=" bg-white p-3 rounded-full  flex justify-around items-center">
                 <input class="outline-none py-1 md:w-28 text-black" type="text" placeholder="Search here">
                 <i class="text-black fa-solid fa-magnifying-glass"></i>
@@ -57,7 +59,7 @@
 
 
         <!-- mobile navber -->
-        <div class="grid justify-between md:hidden grid-cols-2  ">
+        <div class="flex justify-start md:hidden border-2  ">
             <!-- logo -->
             <div class="flex items-center gap-4 ">
                 <img src="./images/logo.png" alt="">
@@ -67,7 +69,7 @@
             <div class="navbar bg-base-100 flex  justify-end">
                 <div class="navbar-start">
                     <div class="dropdown ">
-                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <label tabindex="0" class="btn btn-ghost btn-circle ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -75,14 +77,15 @@
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu text-right menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu text-left menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
                             <li><a>All Fruits</a></li>
-                            <div class=" bg-white p-1 w-40 flex justify-start items-center  rounded-full">
+                            <div class=" bg-white p-1 w-40 flex justify-start items-center border-2 rounded-full">
+                                <i class="text-black fa-solid cursor-pointer fa-magnifying-glass mr-2"></i>
                                 <input class="outline-none py-1 w-28 text-black " type="text" placeholder="Search here">
-                                <i class="text-black fa-solid cursor-pointer fa-magnifying-glass "></i>
+
                             </div>
                         </ul>
                     </div>
@@ -215,7 +218,79 @@
     <!-- main section start -->
     <main class="my-20">
 
+        <!-- deal of the day section -->
+        <section class="max-w-screen-xl mx-auto mt-28  py-6 p-3 md:px-10 mb-2">
+            <!-- title and time -->
+            <div class="flex justify-between ">
+                <div class=" flex-1">
+                    <h2 class="text-5xl font-semibold">Deal of the day</h2>
+                    <p class="text-sm mt-5">Contrary to popular belief, is not simply random text. It has roots in a
+                        piece of classical
+                        Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!-- timer -->
+                <div class="flex flex-1 justify-end gap-5  text-right">
+                    <div>
+                        <h2 class="text-3xl font-extrabold">29</h2>
+                        <p class="text-sm">Days</p>
+                    </div><i class="fa-solid fa-ellipsis-vertical mt-3"></i>
+                    <div>
+                        <h2 class="text-3xl font-extrabold">15</h2>
+                        <p class="text-sm">Hours</p>
+                    </div><i class="fa-solid fa-ellipsis-vertical mt-3"></i>
+                    <div>
+                        <h2 class="text-3xl font-extrabold">15</h2>
+                        <p class="text-sm">Minutes</p>
+                    </div><i class="fa-solid fa-ellipsis-vertical mt-3"></i>
+                    <div>
+                        <h2 class="text-3xl font-extrabold">08</h2>
+                        <p class="text-sm">Seconds</p>
+                    </div>
+                </div>
+            </div>
 
+
+
+
+            <!-- card container-->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-20">
+
+                <!-- card 1 -->
+                <div class="border space-y-2 p-10 text-center">
+                    <img class="mx-auto" src="images/fruit6.png" alt="">
+                    <h3>12.90$ - 18.85$</h3>
+                    <hr>
+                    <p>Apples</p>
+                    <div class="rating rating-lg rating-half  w-36">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-2 mr-1" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1"
+                            checked />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-2 mr-1" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-2 mr-1" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-2 mr-1" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                    </div><br>
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class=" text-[#f85559]" onclick="my_modal_5.showModal()">Details</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <form method="dialog" class="modal-box">
+                            <h3 class="font-bold text-lg">Hello!</h3>
+                            <p class="py-4">Press ESC key or click the button below to close</p>
+                            <div class="modal-action">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn">Close</button>
+                            </div>
+                        </form>
+                    </dialog>
+
+                </div>
+            </div>
+        </section>
 
 
 
