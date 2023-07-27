@@ -34,10 +34,10 @@
         <!-- navber container -->
         <div class="hidden md:block">
             <nav
-                class=" bg-[#F85559] text-white grid grid-cols-3 items-center justify-between px-8 py-5 mb-10 rounded-full border-2 lg:w[1400px]   ">
+                class=" bg-[#F85559] text-white grid grid-cols-3 items-center justify-between md:px-4 lg:px-8 py-5 mb-10 rounded-full border-2 lg:w[1400px]   ">
                 <!-- navber list -->
                 <div class="">
-                    <ul class="flex gap-6 text-base">
+                    <ul class="flex md:gap-4 lg:gap-6  md:text-sm lg:text-lg cursor-pointer min-w-max ">
                         <li>Home</li>
                         <li>About Us</li>
                         <li>Shop</li>
@@ -45,7 +45,7 @@
                     </ul>
                 </div>
                 <!-- logo -->
-                <div class="flex gap-2 lg:gap-4 items-center ml-10">
+                <div class="flex gap-2 lg:gap-4 justify-center items-center ml-1">
                     <img src="images/logo.png" alt="">
                     <h2 class="md:text-xl lg:text-4xl">Fruit Burst</h2>
                 </div>
@@ -217,21 +217,21 @@
 
 
     <!-- main section start -->
-    <main class="my-20">
+    <main class="my-10 md:my-20">
 
         <!-- deal of the day section -->
         <section class="max-w-screen-xl mx-auto mt-28  py-6 p-3 md:px-10 mb-2">
 
             <!-- title and time -->
             <div class="flex flex-col md:flex-row  justify-between ">
-                <div class=" flex-1">
+                <div class=" flex-1 text-center md:text-left">
                     <h2 class="text-5xl font-semibold">Deal of the day</h2>
                     <p class="text-sm mt-5">Contrary to popular belief, is not simply random text. It has roots in a
                         piece of classical
                         Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <!-- timer -->
-                <div class="flex flex-1 md:justify-end mt-5 gap-5 m ">
+                <div class="flex flex-1 justify-center md:justify-end mt-5 gap-5 m ">
                     <div>
                         <h2 class="text-3xl font-extrabold">29</h2>
                         <p class="text-sm">Days</p>
@@ -602,8 +602,16 @@
                     a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
 
+                            <!-- image -->
+<div class=" md:hidden">
+    <div class="flex mb-10 justify-center">
+        <img src="images/whychoose1.png" alt="">
+    </div>
+</div>
+
+
             <!-- description and image container-->
-            <div class="grid gap-8 items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3  ">
+            <div class="grid gap-8 items-center grid-cols-1  lg:grid-cols-3  ">
 
                 <!-- desc 1 -->
                 <div class="space-y-8">
@@ -712,9 +720,11 @@
                 </div>
 
                 <!-- image -->
-                <div>
-                    <img src="images/whychoose1.png" alt="">
-                </div>
+<div class=" hidden md:block">
+    <div class="flex justify-center">
+        <img src="images/whychoose1.png" alt="">
+    </div>
+</div>
 
                 <!-- desc 2 -->
                 <div class="space-y-8">
